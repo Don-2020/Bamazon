@@ -24,13 +24,13 @@ connection.connect(function (err) {
 
 function readProducts() {
     console.log("Selecting all products...\n");
-    connection.query("SELECT id, product_name, price FROM products", function (err, res) {
-        if (err) throw err;
+    connection.query("SELECT * FROM products", function (err, res) {
+        // if (err) throw err;
         // Log all results of the SELECT statement
-        // for(var i = 0; i < res.length; i++){
-        //     console.table(res[i].id + res[i].name + res[i].price);
-        // }
-        console.table(res)
+        for(var i = 0; i < res.length; i++){
+            console.log(res[i].id, res[i].product_name , res[i].price);
+        }
+        // console.table(res)
         promptSell(res);
         
     });
@@ -65,14 +65,28 @@ function purchaseOrder(orderQuantity,orderID){
             var totalCost = res[0].price * orderQuantity;
             console.log("Good news your order went through")
             console.log("Your total cost for " + orderQuantity + " "+ res[0].product_name+ " is "  + totalCost + " Thank you!")
-            connection.query('UPDATE products SET stock_quantity = stock_quantity - ' + orderQuantity + "WHERE id = " + orderID)
+            var newQuantity = res[0].stock_quantity - orderQuantity;
+            connection.query(
+                "UPDATE products SET ? WHERE ?",
+                [
+                    {
+                        stock_quantity: newQuantity
+                    },
+                    {
+                        id: orderID
+                    }
+                ],
+                function(err,res){
+                    if(err) throw err;
+                    // console.log(res);
+                    
+                });
         }
         else{
-            console.log("Insufiecnet")
+            console.log("Insufficient quantity!")
         }
 
-readProducts() 
-
+        readProducts();
     });
 }
 
