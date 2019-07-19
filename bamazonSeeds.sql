@@ -15,22 +15,22 @@ CREATE TABLE  products (
 
 
 INSERT INTO products (product_name, department, price, stock_quantity)
-VALUES ("HP Spectre", "HP", 1500, 50);
+VALUES ("HP Spectre", "Electronic", 1500, 50);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("PS4", "Sony", 436.99, 20);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("PS4", "Gaming", 436.99, 20);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Space Jam 11", "Nike", 430, 4);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Space Jam 11", "Clothing", 430, 4);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES("N3XT L3V3L","Adidas",180, 10);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES("N3XT L3V3L","Clothing",180, 10);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Xbox One", "Microsoft", 362, 25);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Xbox One", "Gaming", 362, 25);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Wii", "Nintendo", 226.58, 11);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Wii", "Gaming", 226.58, 11);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("MacBook Pro", "Apple", 2799, 15);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("MacBook Pro", "Electronic", 2799, 15);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Surface Book 2 ", "Microsoft", 1049, 30);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Surface Book 2 ", "Electronic", 1049, 30);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("IPad Pro", "Apple", 80, 40);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("IPad Pro", "Electronic", 80, 40);
 
-INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Razer Blade 15", "Razer", 1999.99, 100);
+INSERT INTO products (product_name, department, price, stock_quantity)VALUES ("Razer Blade 15", "Gaming", 1999.99, 100);
