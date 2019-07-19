@@ -23,7 +23,7 @@ connection.connect(function (err) {
 });
 
 function readProducts() {
-    console.log("Selecting all products...\n");
+    console.log("\n");
     connection.query("SELECT * FROM products", function (err, res) {
         // if (err) throw err;
         // Log all results of the SELECT statement
@@ -64,7 +64,7 @@ function purchaseOrder(orderQuantity,orderID){
         if (err) throw err;
         if(orderQuantity <= res[0].stock_quantity){
             var totalCost = res[0].price * orderQuantity;
-            console.log("Good news your order went through")
+            console.log("\n\nGood news your order went through")
             console.log("Your total cost for " + orderQuantity + " "+ res[0].product_name+ " is "  + totalCost + " Thank you!")
             var newQuantity = res[0].stock_quantity - orderQuantity;
             connection.query(
