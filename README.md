@@ -12,5 +12,5 @@ There are two portals from which users can view the Bamazon app. A customer port
 
 # Customer Demo
 The customer interface:
-[image of table]("Screenshots\customersview.JPG")
+[image of table](https://github.com/Don-2020/Bamazon/blob/master/Screenshots/customersview.JPG)
 
