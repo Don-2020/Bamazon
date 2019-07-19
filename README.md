@@ -20,7 +20,7 @@ The customer interface:
 
 # Manager Demo
 The manager interface:
-
+```
 <img src="Screenshots/managerSelection.png" width = "250">
 
 <img src="Screenshots/originalManagerView.png" width = "250">
@@ -33,4 +33,4 @@ The manager interface:
 
 <img src="Screenshots/managerView.png" width = "250">
 
-
+```
