@@ -12,5 +12,7 @@ There are two portals from which users can view the Bamazon app. A customer port
 
 # Customer Demo
 The customer interface:
-![](Screenshots/customersview.JPG)
+
+<img src="Screenshots/customersview.JPG" width = "250">
+
 
