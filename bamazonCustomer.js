@@ -31,6 +31,7 @@ function readProducts() {
             console.log(res[i].id, res[i].product_name , res[i].price);
         }
         // console.table(res)
+        console.log("\n\n")
         promptSell(res);
         
     });
