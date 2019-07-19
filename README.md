@@ -1,4 +1,4 @@
-##Bamazon
+#Bamazon
 ```
 Welcome to Bamazon! An Amazon-like storefront that was built with MySQL and Node.js. 
 
@@ -10,34 +10,34 @@ There are two portals from which users can view the Bamazon app. A customer port
 
 ```
 
-##Customer Demo
-#The customer interface:
-`/`
+#Customer Demo
+**The customer interface:**
+
 <img src="Screenshots/customersview.JPG" width = "250">
 
-`l`
+
 <img src="Screenshots/customerbuy.png" width = "250">
 
 
-##Manager Demo
+#Manager Demo
 
-#The manager interface:
+**The manager interface:*
 `When the manager portal is open four options presented to the viewer, as seen below. `
 <img src="Screenshots/managerSelection.png" width = "250">
 
-`w`
+
 <img src="Screenshots/originalManagerView.png" width = "250">
 
-`m`
+
 <img src="Screenshots/managerLowInventory.png" width = "250">
 
-`,`
+
 <img src="Screenshots/managerUpdate.png" width = "250">
 
-`.`
+
 <img src="Screenshots/managerAdd.png" width = "250">
 
-`.`
+
 <img src="Screenshots/managerView.png" width = "250">
 
 
